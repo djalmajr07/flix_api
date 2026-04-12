@@ -3,9 +3,9 @@ from django.urls import path, include # type: ignore
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('genres.urls')),
-    path('api/v1/', include('actors.urls')),
-    path('api/v1/', include('movies.urls')),
-    path('api/v1/', include('reviews.urls')),
+    path('api/v1/genres/', include('genres.urls')),
+    path('api/v1/actors/', include('actors.urls')),
+    path('api/v1/movies/', include('movies.urls')),
+    path('api/v1/reviews/', include('reviews.urls')),
 ]   
  
