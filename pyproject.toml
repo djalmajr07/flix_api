@@ -1,17 +1,16 @@
-[project]
+[tool.poetry]
 name = "flix-api"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Djalma Junior",email = "djalmajr07@gmail.com"}
-]
+authors = ["Djalma Junior <djalmajr07@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "django (>=6.0.3,<7.0.0)",
-    "djangorestframework (>=3.17.1,<4.0.0)"
-]
 
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^6.0.3"
+djangorestframework = "^3.17.1"
+shell = "^1.0.1"
+djangorestframework-simplejwt = "^5.5.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
